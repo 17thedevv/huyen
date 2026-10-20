@@ -2,9 +2,11 @@
 
 Một website tĩnh một trang chúc mừng 20/10 dành cho Vũ Minh Huyền. Dự án dùng HTML, CSS và JavaScript thuần; không cần cài package hay chạy build.
 
+Bấm phong thư hoặc nút “Mở ra xem nào ✨” để đọc nội dung trong popup. Đóng bằng nút ×, nút “Gấp lá thư lại”, phím Escape hoặc bấm bên ngoài thư. Nút “Đọc lại từ đầu” mở lại lá thư tại vị trí đang xem. Nội dung tập trung trong `index.html` để dễ sửa.
+
 ## Chạy trên máy
 
-Mở `index.html` trực tiếp trong trình duyệt, hoặc chạy một máy chủ tĩnh từ thư mục này, ví dụ:
+Chạy máy chủ tĩnh từ thư mục này để trình duyệt tải được JavaScript module:
 
 ```powershell
 python -m http.server 8000

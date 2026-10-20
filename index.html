@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0b1026" />
-    <meta name="description" content="Một lá thư nhỏ dưới trời tím, gửi Vũ Minh Huyền nhân ngày 20/10." />
-    <title>Gửi Huyền, dưới trời tím</title>
+    <meta name="description" content="Chúc Huyền 20/10 vui vẻ nhé! Một lời chúc nhỏ và một chút bất ngờ dành riêng cho Vũ Minh Huyền." />
+    <title>Gửi Huyền — Chúc 20/10 vui vẻ nhé!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
@@ -23,41 +23,54 @@
     <div class="cursor-glow" aria-hidden="true"></div>
     <main>
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero__topline"><span class="eyebrow"><span class="eyebrow__star">✦</span> 20 tháng 10 · một ngày thật dịu dàng</span><span class="hero__edition">THƯ GỬI RIÊNG</span></div>
+        <div class="hero__topline"><span class="eyebrow"><span class="eyebrow__star">✦</span> 20 THÁNG 10 · MỘT NGÀY ĐẶC BIỆT</span><span class="hero__edition">GỬI VŨ MINH HUYỀN</span></div>
         <div class="hero__content">
-          <p class="hero__pretitle reveal">Một chút dịu dàng, gửi đến</p>
-          <h1 id="hero-title" class="hero__title reveal"><span>Vũ Minh</span><em>Huyền</em></h1>
-          <p class="hero__subtitle reveal">Có một điều nhỏ đang chờ Huyền<br class="desktop-only" /> dưới bầu trời tím này.</p>
-          <button class="envelope" id="envelopeButton" type="button" aria-expanded="false" aria-controls="letterMessage" aria-label="Mở lá thư dành cho Huyền">
+          <h1 id="hero-title" class="hero__title reveal"><span>Chúc Huyền</span><em>20/10 vui vẻ nhé!</em></h1>
+          <p class="hero__subtitle reveal">Có một lời chúc nhỏ muốn gửi đến Huyền<br class="desktop-only" /> vào ngày hôm nay.</p>
+          <button class="envelope" id="envelopeButton" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="letterDialog" aria-label="Mở lá thư dành cho Huyền" data-open-letter>
             <span class="envelope__letter" aria-hidden="true"><span class="envelope__letter-line"></span><span class="envelope__letter-line"></span><span class="envelope__letter-heart">♡</span></span><span class="envelope__back"></span><span class="envelope__flap"></span><span class="envelope__front"></span><span class="envelope__seal" aria-hidden="true">H</span><span class="envelope__hint" aria-hidden="true">chạm để mở</span>
           </button>
-          <p class="hero__cta reveal"><span class="hero__cta-line"></span> Nhấn vào phong thư để mở <span class="hero__cta-line"></span></p>
+          <button class="button button--light hero-open-button" id="letterCta" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="letterDialog" data-open-letter>Mở ra xem nào <span aria-hidden="true">✨</span></button>
+          <p class="hero__cta reveal">Không có gì phức tạp đâu,<br /> chỉ là một chút bất ngờ thôi.</p>
           <noscript><p class="noscript-note">Lời chúc vẫn có thể đọc ở phần tiếp theo bên dưới.</p></noscript>
-          <a class="scroll-cue" href="#letter" aria-label="Cuộn xuống lá thư"><span class="scroll-cue__line"></span><span>Cuộn chậm thôi</span></a>
+          <a class="scroll-cue" href="#wishes" aria-label="Khám phá những điều ước"><span class="scroll-cue__line"></span><span>Những điều ước nhỏ</span></a>
         </div>
         <div class="hero__side-note" aria-hidden="true">A LETTER<br />BENEATH THE<br />LAVENDER SKY</div>
       </section>
-      <section class="letter section-wrap" id="letter" aria-labelledby="letter-title">
-        <div class="section-kicker reveal"><span>01</span><i></i><span>MỘT LÁ THƯ</span></div>
-        <div class="letter__layout">
-          <div class="letter__stamp reveal" aria-hidden="true"><span class="stamp__orbit"></span><span class="stamp__moon">☾</span><span class="stamp__spark">✦</span><span class="stamp__date">20<br />10</span></div>
-          <div class="letter__copy"><p class="eyebrow reveal">Gửi Huyền,</p><h2 id="letter-title" class="section-title reveal">Một lời chúc nhỏ<br /><em>cho ngày đặc biệt.</em></h2>
-            <div class="letter__body" id="letterMessage"><p>Chúc Huyền một ngày 20/10 thật dịu dàng. Mong những điều tốt đẹp sẽ đến với Huyền theo những cách bình yên nhất; mong Huyền luôn có đủ niềm vui để mỉm cười, đủ tự tin để theo đuổi những điều mình yêu thích và luôn được yêu thương, trân trọng.</p><p class="letter__signoff">Thân gửi Huyền <span>♡</span></p></div>
-            <p class="letter__closed-note" id="letterPrompt">Phong thư đang đợi Huyền mở ở phía trên.</p>
-          </div>
+      <section class="letter-copy letter-fallback section-wrap" id="letterContent" aria-labelledby="letter-title">
+        <p class="letter-copy__date">MỘT LÁ THƯ DƯỚI TRỜI TÍM <span>20 · 10</span></p>
+        <span class="letter-copy__ornament" aria-hidden="true">✧</span>
+        <h2 class="letter-copy__title" id="letter-title" tabindex="-1">Gửi Huyền,</h2>
+        <div class="letter-copy__message">
+          <p>Chúc Huyền có một ngày 20/10 thật vui nhé!</p>
+          <p>Mong hôm nay Huyền sẽ nhận được nhiều niềm vui, gặp những người dễ thương, ăn được món mình thích và có thật nhiều lý do để cười.</p>
+          <p>Chúc Huyền luôn khỏe mạnh, tự tin với những điều mình lựa chọn và làm được những việc mà bản thân đang cố gắng.</p>
+          <p>À, cũng đừng quên dành chút thời gian nghỉ ngơi nữa nhé. Không phải lúc nào cũng cần bận rộn mới là tốt đâu.</p>
         </div>
+        <p class="letter-copy__signoff"><strong>20/10 vui vẻ nha, Huyền!</strong></p>
       </section>
-      <section class="wishes section-wrap" aria-labelledby="wishes-title">
-        <div class="section-kicker reveal"><span>02</span><i></i><span>BA ĐIỀU ƯỚC</span></div>
-        <div class="wishes__intro"><p class="eyebrow reveal">Nếu có thể gửi Huyền</p><h2 id="wishes-title" class="section-title reveal">Ba điều ước<br /><em>bé xíu mà thật lòng.</em></h2></div>
-        <div class="wishes__grid"><article class="wish-card reveal"><span class="wish-card__number">01</span><span class="wish-card__icon" aria-hidden="true">✧</span><p>Mong mỗi ngày đều có một điều nhỏ khiến Huyền vui.</p><span class="wish-card__rule"></span></article><article class="wish-card reveal"><span class="wish-card__number">02</span><span class="wish-card__icon" aria-hidden="true">☾</span><p>Mong những nỗ lực của Huyền luôn được đền đáp xứng đáng.</p><span class="wish-card__rule"></span></article><article class="wish-card reveal"><span class="wish-card__number">03</span><span class="wish-card__icon" aria-hidden="true">✦</span><p>Mong Huyền luôn giữ được sự tự tin, nét riêng và những ước mơ của mình.</p><span class="wish-card__rule"></span></article></div>
+      <section class="wishes section-wrap" id="wishes" aria-labelledby="wishes-title">
+        <div class="section-kicker reveal"><span>02</span><i></i><span>BA ĐIỀU NHỎ XÍU</span></div>
+        <div class="wishes__intro"><h2 id="wishes-title" class="section-title reveal">Nhân ngày hôm nay,<br /><em>chúc Huyền ba điều nhé.</em></h2></div>
+        <div class="wishes__grid">
+          <article class="wish-card reveal"><span class="wish-card__number">01</span><span class="wish-card__icon" aria-hidden="true">✧</span><h3>Luôn vui vẻ</h3><p>Mong Huyền có nhiều ngày vui hơn ngày buồn, và nếu có ngày không vui thì mọi chuyện cũng sớm ổn hơn.</p><span class="wish-card__rule"></span></article>
+          <article class="wish-card reveal"><span class="wish-card__number">02</span><span class="wish-card__icon" aria-hidden="true">☾</span><h3>Mọi chuyện thuận lợi</h3><p>Những điều Huyền đang cố gắng sẽ dần có kết quả tốt. Nếu có lúc chưa được như ý thì cũng đừng quá khắt khe với bản thân nhé.</p><span class="wish-card__rule"></span></article>
+          <article class="wish-card reveal"><span class="wish-card__number">03</span><span class="wish-card__icon" aria-hidden="true">✦</span><h3>Luôn là chính mình</h3><p>Mong Huyền vẫn luôn tự tin, thoải mái làm những điều mình thích và giữ được những nét rất riêng của mình.</p><span class="wish-card__rule"></span></article>
+        </div>
       </section>
       <section class="secret section-wrap" aria-labelledby="secret-title">
-        <div class="secret__frame"><div class="secret__constellation" aria-hidden="true"><span>✦</span><span>·</span><span>✧</span><span>·</span><span>✦</span><i></i><b></b></div><div class="section-kicker section-kicker--center"><span>03</span><i></i><span>MÓN QUÀ BÍ MẬT</span></div><p class="eyebrow">Dành riêng cho Huyền</p><h2 id="secret-title" class="section-title">Có một điều<br /><em>đang khẽ phát sáng.</em></h2><p class="secret__hint">Một món quà nhỏ đang chờ được mở.</p><button class="button button--light" id="secretButton" type="button" aria-expanded="false" aria-controls="secretMessage" hidden><span id="secretButtonLabel">Mở món quà bí mật</span><span aria-hidden="true">↗</span></button>
-          <div class="secret__message" id="secretMessage"><span class="secret__heart" aria-hidden="true">♡</span><p>“Món quà này không lớn, chỉ mong có thể mang đến cho Huyền thêm một nụ cười hôm nay.”</p></div>
+        <div class="secret__frame"><div class="secret__constellation" aria-hidden="true"><span>✦</span><span>·</span><span>✧</span><span>·</span><span>✦</span><i></i><b></b></div><div class="section-kicker section-kicker--center"><span>03</span><i></i><span>MỘT CHÚT BẤT NGỜ</span></div><h2 id="secret-title" class="section-title">Khoan,<br /><em>còn một thứ nữa!</em></h2><p class="secret__hint">Đã đến đây rồi thì thử bấm thêm một lần xem có gì nhé.</p><button class="button button--light" id="secretButton" type="button" aria-expanded="false" aria-controls="secretMessage" hidden><span id="secretButtonLabel">Khám phá bí mật</span><span aria-hidden="true">↗</span></button>
+          <div class="secret__message" id="secretMessage"><div class="secret__inner"><span class="secret__heart" aria-hidden="true">♡</span><p>Thật ra cũng không có gì to tát đâu.</p><p>Chỉ là muốn gửi Huyền thêm một lời chúc, ngoài lời chúc mà ai cũng có thể nói hôm nay.</p><p>Mong Huyền sẽ mỉm cười khi đọc đến đây. Thế là vui rồi. 😊</p></div></div>
         </div>
       </section>
-      <section class="afterglow section-wrap" aria-labelledby="afterglow-title"><div class="afterglow__halo" aria-hidden="true"></div><div class="section-kicker section-kicker--center reveal"><span>04</span><i></i><span>SAU ÁNH TRĂNG</span></div><p class="eyebrow reveal">Happy Vietnamese Women's Day</p><h2 id="afterglow-title" class="afterglow__title reveal">Chúc Huyền một ngày<br /><em>thật vui và ấm áp.</em></h2><p class="afterglow__text reveal">Mong hôm nay và cả những ngày sau nữa<br /> đều có thật nhiều điều khiến Huyền mỉm cười.</p><button class="replay-button reveal" id="replayButton" type="button"><span aria-hidden="true">↺</span> Đọc lại lá thư</button><footer class="footer"><span>Được viết dưới trời tím, với tất cả sự dịu dàng.</span><span>20 · 10</span></footer></section>
+      <section class="afterglow section-wrap" aria-labelledby="afterglow-title"><div class="afterglow__halo" aria-hidden="true"></div><div class="section-kicker section-kicker--center reveal"><span>04</span><i></i><span>LỜI KẾT</span></div><p class="eyebrow reveal">Happy Vietnamese Women's Day</p><h2 id="afterglow-title" class="afterglow__title reveal">Thế nhé,<br /><em>Huyền!</em></h2><p class="afterglow__text reveal">Chúc Huyền một ngày 20/10 thật vui, nhận được nhiều điều dễ thương và có một buổi tối thật thoải mái.</p><p class="afterglow__text reveal">Cảm ơn Huyền đã dành chút thời gian khám phá chiếc website nhỏ này.</p><p class="afterglow__wish reveal"><strong>20/10 vui vẻ nha! 💜</strong></p><button class="replay-button reveal" id="replayButton" type="button"><span aria-hidden="true">↺</span> Đọc lại từ đầu</button><footer class="footer"><span>Một lời chúc nhỏ, gửi riêng Huyền.</span><span>20 · 10</span></footer></section>
     </main>
+    <dialog class="letter-dialog" id="letterDialog" aria-labelledby="letter-title">
+      <button class="letter-dialog__close" type="button" aria-label="Đóng lá thư" data-close-letter><span aria-hidden="true">×</span></button>
+      <article class="letter-paper">
+        <div id="letterDialogContent"></div>
+        <form class="letter-dialog__footer" method="dialog"><button class="letter-dialog__fold" type="submit">Gấp lá thư lại <span aria-hidden="true">↗</span></button></form>
+      </article>
+    </dialog>
   </body>
 </html>
